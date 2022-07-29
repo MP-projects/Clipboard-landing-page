@@ -1,0 +1,29 @@
+.main-page{
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 20rem;
+    &__download {
+        margin-bottom: 15rem;
+    }
+    &__article {
+        margin-bottom: 5rem;
+    }
+    &__section-possibilities{
+        margin-bottom: 10rem;
+    }
+    &__access-article{
+        margin-bottom: 15rem; 
+         &-img{
+            max-width: 100%;
+            height: auto;
+             
+    }}
+    &__section-offer-options{
+        margin-bottom: 15rem;
+    &-img {
+        margin-bottom: 3rem;
+    }}
+   
+   
+ 
+}

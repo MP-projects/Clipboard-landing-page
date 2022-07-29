@@ -11,6 +11,10 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de9c2f8336.js" crossorigin="anonymous"></script>
   <style>
     .attribution {
       font-size: 11px;
@@ -19,25 +23,36 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      display: inline;
     }
   </style>
+  <link rel="stylesheet" href="./css/style.css ">
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__img-wrapper"><img class="header__img" src="./images/logo.svg" alt="logo"></div>
+
+<div class="page-container">
+  
+  <header class="page-container__header header">
+    <div class="header__img-wrapper">
+      <img class="header__img" src="images/logo.svg" logo">
+    </div>
   </header>
-  <main class="main-page">
+
+  <main class="page-container__main main-page">
+
     <section class="main-page__download download-section">
       <h2 class="download-section__title">A history of everything you copy</h2>
       <p class="download-section__article">Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.</p>
-      <div class="download-section__buttonn-wrapper">
-        <button class="download-section__button button"><a class="button__link" href="">Download for iOS</a></button>
+      <div class="download-section__button-wrapper">
         <button
-          class="download-section__button-blue button"><a class="button__link" href="">Download for Mac</a></button>
+          class="download-section__button-ios button"><a class="button__link" href="#">Download for iOS</a></button>
+        <button
+          class="download-section__button-mac button"><a class="button__link" href="">Download for Mac</a></button>
       </div>
     </section>
+
     <section class="main-page__article article-section">
       <h2 class="article-section__title">Keep track of your snippets</h2>
       <p class="article-section__article">Clipboard instantly stores any item you copy in the cloud,
@@ -45,63 +60,73 @@
         devices. Our Mac and iOS apps will help you organize everything.
       </p>
     </section>
+
     <section class="main-page__section-possibilities section-column">
       <div class="section-column__img-wrapper"><img class="section-column__img" src="./images/image-computer.png"
           alt="computer"></div>
-      <aside class="section-column__side-article-wrapper">
-        <div class="section-column__side-article-item-wrapper">
-          <h2 class="section-column__side-article-item-tittle">Quick Search</h2>
-          <p class="section-column__side-article-item-article">Easily search your snippets by content, category, web
+      <aside class="section-column__side-articles-wrapper">
+        <div class="article-section">
+          <h2 class="article-section__title">Quick Search</h2>
+          <p class="article-section__article article-section__article--margin">Easily search your snippets by content,
+            category, web
             address, application, and more.</p>
         </div>
-        <div class="section-column__side-article-item-wrapper">
-          <h2 class="section-column__side-article-item-tittle">iCloud Sync</h2>
-          <p class="section-column__side-article-item-article">Instantly saves and syncs snippets across all your
+        <div class="article-section">
+          <h2 class="article-section__title">iCloud Sync</h2>
+          <p class="article-section__article article-section__article--margin">Instantly saves and syncs snippets across
+            all your
             devices.
           </p>
         </div>
-        <div class="section-column__side-article-item-wrapper">
-          <h2 class="section-column__side-article-item-tittle">Complete History</h2>
-          <p class="section-column__side-article-item-article">Retrieve any snippets from the first moment you started
+        <div class="article-section">
+          <h2 class="article-section__title">Complete History</h2>
+          <p class="article-section__article article-section__article--margin">Retrieve any snippets from the first
+            moment you started
             using the app.</p>
         </div>
       </aside>
     </section>
+
     <section class="main-page__access-article article-section">
       <div class="article-section__article-wrapper">
         <h2 class="article-section__title">Access Clipboard anywhere</h2>
         <p class="article-section__article"> Whether you’re on the go, or at your computer, you can access all your
-          Clipboard
-          snippets in a few simple clicks.</p>
+          Clipboard snippets in a few simple clicks.</p>
       </div>
-      <div class="article-section__img-wrapper"><img class="article-section__img" src="./images/image-devices.png"
-          alt="devices"></div>
+      <div class="main-page__access-article-img-wrapper"><img class="main-page__access-article-img"
+          src="./images/image-devices.png" alt="devices"></div>
     </section>
-    <section class="main-page__section-offer-options section-row">
-      <div class="section-row__article-wrapper">
-        <h2 class="section-row__article-tittle">Supercharge your workflow</h2>
-        <p class="section-row__article-text">We’ve got the tools to boost your productivity.</p>
+
+    <section class="main-page__section-offer-options">
+      <div class=" article-section">
+        <h2 class=" article-section__title">Supercharge your workflow</h2>
+        <p class=" article-section__article article-section__article--margin">We’ve got the tools to boost your
+          productivity.</p>
       </div>
-      <div class="section-row__items-wrapper">
-        <div class="section-row__item-wrapper">
-          <img class="section-row__item-img" src="./images/icon-blacklist.svg" alt="blacklists">
-          <h2 class="section-row__item-tittle">Create blacklists</h2>
-          <p class="section-row__item-article">Ensure sensitive information never makes its way to your clipboard by
+      <div class="main-page__section-offer-options-items-wrapper">
+        <div class="article-section">
+          <img class="main-page__section-offer-options-img" src="./images/icon-blacklist.svg" alt="blacklists">
+          <h2 class=" article-section__title">Create blacklists</h2>
+          <p class="article-section__article article-section__article--margin">Ensure sensitive information never makes
+            its way to your clipboard by
             excluding certain sources.</p>
         </div>
-        <div class="section-row__item-wrapper">
-          <img class="section-row__item-img" src="./images/icon-text.svg" alt="text">
-          <h2 class="section-row__item-tittle">Plain text snippets</h2>
-          <p>Remove unwanted formatting from copied text for a consistent look.</p>
+        <div class="s article-section">
+          <img class="main-page__section-offer-options-img" src="./images/icon-text.svg" alt="text">
+          <h2 class="article-section__title">Plain text snippets</h2>
+          <p class="article-section__article article-section__article--margin">Remove unwanted formatting from copied
+            text for a consistent look.</p>
         </div>
-        <div class="section-row__item-wrapper">
-          <img class="section-row__item-img" src="./images/icon-preview.svg" alt="preview">
-          <h2 class="section-row__item-tittle">Sneak preview</h2>
-          <p class="section-row__item-article">Quick preview of all snippets on your Clipboard for easy access.
+        <div class="article-section">
+          <img class="main-page__section-offer-options-img" src="./images/icon-preview.svg" alt="preview">
+          <h2 class="article-section__title">Sneak preview</h2>
+          <p class="article-section__article article-section__article--margin">Quick preview of all snippets on your
+            Clipboard for easy access.
           </p>
         </div>
       </div>
     </section>
+
     <section class="main-page__big-clients-section section-row">
       <img class="section-row__item-img" src="./images/logo-google.png" alt="google logo">
       <img class="section-row__item-img" src="./images/logo-ibm.png" alt="ibm logo">
@@ -109,42 +134,50 @@
       <img class="section-row__item-img" src="./images/logo-hp.png" alt="hp logo">
       <img class="section-row__item-img" src="./images/logo-vector-graphics.png" alt="vector graphics logo">
     </section>
+
     <section class="main-page__download-clipboard download-section">
       <h2 class="download-section__title">Clipboard for iOS and Mac OS</h2>
       <p class="download-section__article">Available for free on the App Store. Download for Mac or iOS, sync with
         iCloud
         and you’re ready to start adding to your clipboard.</p>
       <div class="download-section__buttonn-wrapper">
-        <button class="download-section__button button"><a class="button__link" href="">Download for iOS</a></button>
+        <button class="download-section__button-ios button"><a class="button__link" href="">Download for iOS</a></button>
         <button
-          class="download-section__button-blue button"><a class="button__link" href="">Download for Mac</a></button>
+          class="download-section__button-mac button"><a class="button__link" href="">Download for Mac</a></button>
       </div>
     </section>
 
   </main>
-  <footer class="main-footer">
+
+  <footer class=" page-container__footer main-footer">
+   
     <aside class="main-footer__logo-wrapper">
       <img class="main-footer__logo-img" src="./images/logo.svg" alt="logo">
     </aside>
-    <div class="main-footer__links-wrapper">
-      <span class="main-footer__faq footer-link"><a class="footer-link__link" href="/#">FAQs</a></span>
-      <span class="main-footer__privacy-policy footer-link"><a class="footer-link__link" href="/#">Contact Us</a></span>
-      <span class="main-footer__install footer-link"><a class="footer-link__link" href="/#">Privacy Policy</a></span>
-      <span class="main-footer__contact footer-link"><a class="footer-link__link" href="/#">Press Kit</a></span>
-      <span class="main-footer__press footer-link"><a class="footer-link__link" href="/#">Install Guide</a></span>
+
+    <div class="main-footer__links-wrapper footer-wrapper">
+      <span class="footer-wrapper__link"><a class="footer-wrapper__link-link" href="/#">FAQs</a></span>
+      <span class="footer-wrapper__link"><a class="footer-wrapper__link-link" href="/#">Contact Us</a></span>
+      <span class="footer-wrapper__link"><a class="footer-wrapper__link-link" href="/#">Privacy Policy</a></span>
+      <span class="footer-wrapper__link"><a class="footer-wrapper__link-link" href="/#">Press Kit</a></span>
+      <span class="footer-wrapper__link"><a class="footer-wrapper__link-link" href="/#">Install Guide</a></span>
     </div>
-    <aside class="main-footer__social-medias-wrapper">
-      <img class="main-footer__social-media-facebook-logo" src="./images/icon-facebook.svg" alt="facebook">
-      <img class="main-footer__social-media-twitter-logo" src="./images/icon-twitter.svg" alt="twitter">
-      <img class="main-footer__social-media-instagram-logo" src="./images/icon-instagram.svg" alt="instagram">
+
+    <aside class="main-footer__social-medias-wrapper footer-wrapper footer-wrapper--row">
+      <div class="footer-wrapper__logo"><a class="footer-wrapper__link-link--auto-width" href="/#"><i class="fab fa-facebook-square "></i></a></div>
+      <div class="footer-wrapper__logo"><a class="footer-wrapper__link-link--auto-width" href="/#"><i class="fab fa-twitter-square"></i></a></div>
+      <div class="footer-wrapper__logo"><a class="footer-wrapper__link-link--auto-width" href="/#"><i class="fab fa-instagram "></i></a></div>
     </aside>
+
   </footer>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Paweł</a>.
     </p>
   </footer>
+</div>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+.button {
+    width: 80vw;
+    border-radius: 20rem;
+    margin: 1rem;
+    line-height: 5rem;
+    border: 0.1rem solid;
+    border-bottom: 0.3rem solid;
+    &__link{
+        color: white;
+        font-size: $font-size-primary;
+        letter-spacing: 0.1rem; 
+    }
+}

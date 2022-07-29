@@ -1,0 +1,40 @@
+.download-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__title {
+        margin-bottom: 2rem;
+        text-align: center;
+        color: $color-font-primary;
+        font-size: 2.8rem;
+        
+    }
+    &__article{
+        margin-bottom: 3rem;
+        text-align: center;
+        color: $color-font-secondary;
+        font-size: 1.5rem;
+    }
+    &__button-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__button-ios {
+
+        background-color: $color-btn-ios;
+        border-color: darken($color-btn-ios, 10%);
+        box-shadow: 0 0 1rem lighten($color-btn-ios, 30%) ;
+    
+        
+        
+    }
+    &__button-mac {
+        background-color: $color-btn-mac;
+        border-color: darken($color-btn-mac, 10%);
+        box-shadow: 0 0 1rem lighten($color-btn-mac, 30%)
+    }
+}
+

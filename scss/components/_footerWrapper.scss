@@ -1,0 +1,31 @@
+.footer-wrapper{
+    display:flex;
+    flex-direction: column;
+    &__link{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-link{
+        color: $color-font-primary;
+        text-align: center;
+        &--auto-width{
+            display: inline;
+            width: auto;
+        }
+    }}
+    &--row{
+        flex-direction:row;
+        justify-content: center;
+    }
+    &__logo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;           
+}}
+
+.fab{
+    color:$color-font-primary;
+    font-size: 3rem;
+}
