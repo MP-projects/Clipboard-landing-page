@@ -1,20 +1,22 @@
-$breakpoints :(
-    xsmall : 'min-width: 460px',
-    small : 'min-width: 460px',
-    medium : 'min-width: 460px',
-    large : 'min-width: 460px',
-    xlarge : 'min-width: 460px',
-    xxlarge : 'min-width: 460px',
+$breakpoints :(xsmall : 'min-width: 460px',
+    small : 'min-width: 640px',
+    medium : 'min-width: 800px',
+    large : 'min-width: 1024px',
+    xlarge : 'min-width: 1200px',
+    xxlarge : 'min-width: 1440px',
 );
 
 @mixin media($breakpoint) {
-    $size : map-get($map: $breakpoints, $key: $breakpoint );
+    $size: map-get($map: $breakpoints, $key: $breakpoint);
+
     @if($size) {
         @media (#{$size}) {
             @content;
         }
     }
+
     @else {
-        @error $breakpoint    }
+        @error $breakpoint
+    }
 
 }

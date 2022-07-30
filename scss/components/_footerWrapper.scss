@@ -12,6 +12,10 @@
         &--auto-width{
             display: inline;
             width: auto;
+            &:hover>.fab{
+                color:$color-btn-ios;
+            }
+           
         }
     }}
     &--row{
@@ -22,7 +26,8 @@
         width: 20%;
         display: flex;
         align-items: center;
-        justify-content: center;           
+        justify-content: center; 
+                  
 }}
 
 .fab{
