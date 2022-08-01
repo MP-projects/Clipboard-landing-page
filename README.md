@@ -18,7 +18,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ### Screenshot
 
 ![](./screenshots/screenshot-desktop.jpg)
-![](./screenshots/screenshot-mobile.jpg)
 
 ### Links
 
